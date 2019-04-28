@@ -1,4 +1,4 @@
-// swift-tools-version:3.0.2
+// swift-tools-version:4.0.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,5 +6,5 @@ import PackageDescription
 let package = Package(
     name: "CCairo",
     pkgConfig: "cairo",
-    providers: [.brew("cairo"), .apt("libcairo-dev")]
+    providers: [.brew(["cairo"]), .apt(["libcairo-dev"])]
 )
